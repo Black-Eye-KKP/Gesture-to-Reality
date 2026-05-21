@@ -1,0 +1,354 @@
+{
+  "settings": {
+    "camera_index": 0,
+    "cursor_smoothing": 7,
+    "cursor_sensitivity": 5,
+    "click_threshold": 0.04,
+    "scroll_speed": 3,
+    "zoom_speed": 3,
+    "gesture_hold_ms": 150,
+    "pinch_hold_ms": 300,
+    "show_landmarks": true,
+    "show_fps": true,
+    "min_detection_confidence": 0.75,
+    "min_tracking_confidence": 0.75,
+    "dominant_hand": "right",
+    "enable_both_hands": true,
+    "mirror_camera": true,
+    "active": true,
+    "start_minimized": false,
+    "theme": "dark"
+  },
+  "gestures": {
+    "index_tip_move": {
+      "name": "Move Cursor",
+      "description": "Point index finger \u2014 tip controls cursor like a touchpad",
+      "action": "MOVE_CURSOR",
+      "hand": "any",
+      "icon": "\u261d\ufe0f",
+      "category": "cursor",
+      "enabled": true,
+      "editable": false
+    },
+    "pinch_index_thumb": {
+      "name": "Left Click",
+      "description": "Pinch index finger and thumb together",
+      "action": "LEFT_CLICK",
+      "hand": "any",
+      "icon": "\ud83d\udc4c",
+      "category": "click",
+      "enabled": true,
+      "editable": true
+    },
+    "pinch_middle_thumb": {
+      "name": "Right Click",
+      "description": "Pinch middle finger and thumb together",
+      "action": "RIGHT_CLICK",
+      "hand": "any",
+      "icon": "\ud83e\udd0c",
+      "category": "click",
+      "enabled": true,
+      "editable": true
+    },
+    "double_pinch_index_thumb": {
+      "name": "Double Click",
+      "description": "Quick double pinch \u2014 index finger and thumb",
+      "action": "DOUBLE_CLICK",
+      "hand": "any",
+      "icon": "\u270c\ufe0f",
+      "category": "click",
+      "enabled": true,
+      "editable": true
+    },
+    "pinch_ring_thumb": {
+      "name": "Middle Click",
+      "description": "Pinch ring finger and thumb",
+      "action": "MIDDLE_CLICK",
+      "hand": "any",
+      "icon": "\ud83d\udd96",
+      "category": "click",
+      "enabled": true,
+      "editable": true
+    },
+    "pinch_hold_move": {
+      "name": "Click & Drag",
+      "description": "Pinch index+thumb and hold while moving hand",
+      "action": "DRAG",
+      "hand": "any",
+      "icon": "\ud83e\udef3",
+      "category": "drag",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_swipe_up": {
+      "name": "Scroll Up",
+      "description": "Raise index + middle fingers, swipe up",
+      "action": "SCROLL_UP",
+      "hand": "any",
+      "icon": "\ud83d\udd96",
+      "category": "scroll",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_swipe_down": {
+      "name": "Scroll Down",
+      "description": "Raise index + middle fingers, swipe down",
+      "action": "SCROLL_DOWN",
+      "hand": "any",
+      "icon": "\ud83d\udd96",
+      "category": "scroll",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_swipe_left": {
+      "name": "Scroll Left / Back",
+      "description": "Raise index + middle fingers, swipe left",
+      "action": "SCROLL_LEFT",
+      "hand": "any",
+      "icon": "\u2b05\ufe0f",
+      "category": "scroll",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_swipe_right": {
+      "name": "Scroll Right / Forward",
+      "description": "Raise index + middle fingers, swipe right",
+      "action": "SCROLL_RIGHT",
+      "hand": "any",
+      "icon": "\u27a1\ufe0f",
+      "category": "scroll",
+      "enabled": true,
+      "editable": true
+    },
+    "pinch_spread": {
+      "name": "Zoom In",
+      "description": "Spread thumb and index finger apart",
+      "action": "ZOOM_IN",
+      "hand": "any",
+      "icon": "\ud83d\udd0d",
+      "category": "zoom",
+      "enabled": true,
+      "editable": true
+    },
+    "pinch_close": {
+      "name": "Zoom Out",
+      "description": "Bring thumb and index finger together",
+      "action": "ZOOM_OUT",
+      "hand": "any",
+      "icon": "\ud83d\udd0e",
+      "category": "zoom",
+      "enabled": true,
+      "editable": true
+    },
+    "fist_closed": {
+      "name": "Grab / Hold",
+      "description": "Close all fingers into a fist \u2014 grab selected item",
+      "action": "FIST_GRAB",
+      "hand": "any",
+      "icon": "\u270a",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "palm_swipe_left": {
+      "name": "Virtual Desktop Left",
+      "description": "Open palm, swipe left \u2014 switch to left virtual desktop",
+      "action": "VIRTUAL_DESKTOP_LEFT",
+      "hand": "any",
+      "icon": "\ud83e\udef2",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "palm_swipe_right": {
+      "name": "Virtual Desktop Right",
+      "description": "Open palm, swipe right \u2014 switch to right virtual desktop",
+      "action": "VIRTUAL_DESKTOP_RIGHT",
+      "hand": "any",
+      "icon": "\ud83e\udef1",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "palm_swipe_up": {
+      "name": "Task View / Mission Control",
+      "description": "Open palm, swipe up \u2014 open Windows Task View",
+      "action": "TASK_VIEW",
+      "hand": "any",
+      "icon": "\ud83e\udef7",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "palm_swipe_down": {
+      "name": "Show Desktop",
+      "description": "Open palm, swipe down \u2014 minimize all windows",
+      "action": "SHOW_DESKTOP",
+      "hand": "any",
+      "icon": "\ud83d\udd90\ufe0f",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "three_finger_tap": {
+      "name": "Action Center",
+      "description": "Three fingers pointing up, tap \u2014 open Action Center",
+      "action": "ACTION_CENTER",
+      "hand": "any",
+      "icon": "\ud83e\udd1f",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "four_finger_tap": {
+      "name": "Alt+Tab",
+      "description": "Four fingers pointing up, tap \u2014 switch app",
+      "action": "ALT_TAB",
+      "hand": "any",
+      "icon": "\ud83d\udd90\ufe0f",
+      "category": "window",
+      "enabled": true,
+      "editable": true
+    },
+    "thumb_up": {
+      "name": "Volume Up",
+      "description": "Thumbs up gesture \u2014 increase volume",
+      "action": "VOLUME_UP",
+      "hand": "any",
+      "icon": "\ud83d\udc4d",
+      "category": "media",
+      "enabled": true,
+      "editable": true
+    },
+    "thumb_down": {
+      "name": "Volume Down",
+      "description": "Thumbs down gesture \u2014 decrease volume",
+      "action": "VOLUME_DOWN",
+      "hand": "any",
+      "icon": "\ud83d\udc4e",
+      "category": "media",
+      "enabled": true,
+      "editable": true
+    },
+    "ok_sign": {
+      "name": "Play / Pause",
+      "description": "OK sign (index+thumb circle, others extended) \u2014 play/pause media",
+      "action": "PLAY_PAUSE",
+      "hand": "any",
+      "icon": "\ud83d\udc4c",
+      "category": "media",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_right_swipe_quick": {
+      "name": "Next Track",
+      "description": "Quick two-finger swipe right \u2014 next media track",
+      "action": "NEXT_TRACK",
+      "hand": "any",
+      "icon": "\u23ed\ufe0f",
+      "category": "media",
+      "enabled": true,
+      "editable": true
+    },
+    "two_finger_left_swipe_quick": {
+      "name": "Previous Track",
+      "description": "Quick two-finger swipe left \u2014 previous media track",
+      "action": "PREV_TRACK",
+      "hand": "any",
+      "icon": "\u23ee\ufe0f",
+      "category": "media",
+      "enabled": true,
+      "editable": true
+    },
+    "l_shape": {
+      "name": "New Tab",
+      "description": "L-shape with thumb and index \u2014 open new browser tab",
+      "action": "NEW_TAB",
+      "hand": "any",
+      "icon": "\ud83d\udd96",
+      "category": "browser",
+      "enabled": true,
+      "editable": true
+    },
+    "x_fingers_cross": {
+      "name": "Close Tab",
+      "description": "Cross index and middle fingers \u2014 close current tab",
+      "action": "CLOSE_TAB",
+      "hand": "any",
+      "icon": "\u274c",
+      "category": "browser",
+      "enabled": true,
+      "editable": true
+    },
+    "five_finger_spread": {
+      "name": "Close Window",
+      "description": "Spread all five fingers wide \u2014 close active window",
+      "action": "CLOSE_WINDOW",
+      "hand": "any",
+      "icon": "\u270b",
+      "category": "browser",
+      "enabled": true,
+      "editable": true
+    },
+    "shake_hand": {
+      "name": "Undo",
+      "description": "Shake hand left-right \u2014 Ctrl+Z undo",
+      "action": "UNDO",
+      "hand": "any",
+      "icon": "\ud83e\udef1",
+      "category": "browser",
+      "enabled": true,
+      "editable": true
+    },
+    "snap_fingers": {
+      "name": "Screenshot",
+      "description": "Snap motion (middle+thumb flick) \u2014 take screenshot",
+      "action": "SCREENSHOT",
+      "hand": "any",
+      "icon": "\ud83d\udcf8",
+      "category": "browser",
+      "enabled": true,
+      "editable": true
+    },
+    "write_in_air": {
+      "name": "Air Writing (Experimental)",
+      "description": "Trace letters with index finger tip in the air \u2014 text input",
+      "action": "AIR_WRITE",
+      "hand": "any",
+      "icon": "\u270d\ufe0f",
+      "category": "advanced",
+      "enabled": false,
+      "editable": true
+    },
+    "draw_circle": {
+      "name": "Rotate / Spin",
+      "description": "Draw a circle in the air \u2014 rotate selected object",
+      "action": "ROTATE",
+      "hand": "any",
+      "icon": "\ud83d\udd04",
+      "category": "advanced",
+      "enabled": true,
+      "editable": true
+    },
+    "wrist_tilt_left": {
+      "name": "Tilt / Rotate Left",
+      "description": "Tilt wrist counter-clockwise \u2014 rotate selection left",
+      "action": "TILT_LEFT",
+      "hand": "any",
+      "icon": "\u21a9\ufe0f",
+      "category": "advanced",
+      "enabled": true,
+      "editable": true
+    },
+    "wrist_tilt_right": {
+      "name": "Tilt / Rotate Right",
+      "description": "Tilt wrist clockwise \u2014 rotate selection right",
+      "action": "TILT_RIGHT",
+      "hand": "any",
+      "icon": "\u21aa\ufe0f",
+      "category": "advanced",
+      "enabled": true,
+      "editable": true
+    }
+  }
+}
