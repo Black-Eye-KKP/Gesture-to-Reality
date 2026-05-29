@@ -215,6 +215,15 @@ GestureControl/
 
 ---
 
+Run files accordingly:
+- FIX_CAMERA_PERMISSION.bat
+- install.bat
+- INSTALL_OLLAMA.bat
+- INSTALL_PYTHON311.bat
+- RUN_DIAGNOSTIC.bat
+- SETUP_AI.bat
+- run.bat(It's the last file you should run. Before that you may face error)
+
 ## 📄 License
 
 MIT License — free for personal and commercial use.
